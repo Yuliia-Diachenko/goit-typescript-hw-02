@@ -1,0 +1,15 @@
+.button {
+    border-radius: 10px;
+    height: 20px;
+    border: none;
+    background-color:rgb(107, 107, 243);
+    font-size: 12px;
+    color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.button:hover, .button:focus {
+    color: rgb(31, 31, 206);
+    background-color: rgb(89, 89, 243);
+}
