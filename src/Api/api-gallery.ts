@@ -6,12 +6,13 @@ type Key = string;
 
 const KEY: Readonly<Key> = "69yOTvYJnlJO0U8Bzwk4qjVDL3voBtaSOfE3p7pRGv4";
 
-export const getImages = async (query: string, per_page: number): Promise<ImageResponse> => {
+export const getImages = async (query: string, page: number, per_page: number): Promise<ImageResponse> => {
 
         const response = await axios.get(`/search/photos?client_id=${KEY}`, {
           params: {
-            query,            
-            per_page
+            query,   
+            page,         
+            per_page,            
            },
         });
 

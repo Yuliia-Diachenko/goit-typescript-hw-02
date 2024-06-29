@@ -1,8 +1,7 @@
 import {RotatingLines } from "react-loader-spinner";
 import css from "./Loader.module.css";
-import { LoaderProps } from "./Loader.type";
 
- const Loader: React.FC<LoaderProps> = () =>  {
+const Loader= () =>  {
   return (
 
     <div className={css.loader}>    

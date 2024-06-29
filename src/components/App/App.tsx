@@ -18,7 +18,7 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [showBtn, setShowBtn] = useState<boolean>(false);
   const [modalIsOpen, setIsOpen] = React.useState<boolean>(false);
-  const [selectedImage, setSelectedImage] = useState<null>(null);
+  const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
   useEffect(() => {
     if (searchQuery === "") {
@@ -60,14 +60,14 @@ export default function App() {
   }
   return (
     <div className={css.container}>
-      <SearchBar images={images} onSearch={handleSearch} />
+      <SearchBar onSearch={handleSearch} />
       <ImageGallery items={images} openModal={openModal} />
       {isLoading && <Loader />}
       {showBtn && !isLoading && <LoadMoreBtn onClick={handleLoadMore} />}
       {isError && <ErrorMessage />}
       {modalIsOpen && (
         <ImageModal
-          image={selectedImage}
+          // image={selectedImage}
           closeModal={closeModal}
           data={selectedImage}
         />
