@@ -1,6 +1,6 @@
 export interface Image {
    id: string,
-   alt_discription: string,
+   alt_description: string,
    urls: {
      small: string,
      regular: string
