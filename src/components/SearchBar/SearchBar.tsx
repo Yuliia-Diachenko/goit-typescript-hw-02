@@ -1,9 +1,9 @@
 import css from "./SearchBar.module.css";
 import { Field, Form, Formik } from "formik";
-import toast, { Toaster } from 'react-hot-toast'
-;
+import toast, { Toaster } from 'react-hot-toast';
+import { SearchProps } from "./SearchBar.type";
 
-function SearchBar({onSearch}) {
+const SearchBar:React.FC<SearchProps> = ({onSearch}) =>{
 const notify = () => toast('The field cannot be empty!', {
   icon: '👏',
   style: {
@@ -14,7 +14,6 @@ const notify = () => toast('The field cannot be empty!', {
   },
 }
 );
-
     return (
         <Formik initialValues={{ query: "" }}
         onSubmit={(values, actions) => {          
