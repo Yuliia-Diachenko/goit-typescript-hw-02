@@ -56,7 +56,7 @@ export default function App() {
   }
 
   const  closeModal = () : void => {
-    setIsOpen(false);
+    setSelectedImage(null);
   }
   return (
     <div className={css.container}>
@@ -65,7 +65,7 @@ export default function App() {
       {isLoading && <Loader />}
       {showBtn && !isLoading && <LoadMoreBtn onClick={handleLoadMore} />}
       {isError && <ErrorMessage />}
-      {modalIsOpen && (
+      {selectedImage && (
         <ImageModal
           // image={selectedImage}
           closeModal={closeModal}

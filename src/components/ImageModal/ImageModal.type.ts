@@ -1,9 +1,6 @@
-export 
-interface ImageModalProps {
-  data: {
-    alt_description: string,
-    urls: { regular: string },
-  },
+import { Image } from "../App/App.types";
+export interface ImageModalProps {
+  data: Image,
   closeModal: () => void,
 
 }
