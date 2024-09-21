@@ -1,6 +1,12 @@
 .container {
-    background: linear-gradient(to right, rgb(158, 4, 153), pink);
+    background: linear-gradient(to right, rgba(158, 4, 153, 0.6), rgba(255, 192, 203, 0.5));
     height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    border:  1px solid rgba(147, 66, 224, 0.4);
+    box-shadow: 0 6px 10px 0 rgb(99, 45, 150);
     
 }
 
@@ -12,24 +18,34 @@
     
 }
 .input {
+    padding-left: 8px;
     border-radius: 10px;
     border: none;
     font-size: 12px;
     width: 200px;
+    border:  1px solid rgba(147, 66, 224, 0.4);
+    box-shadow: 0 6px 10px 0 rgb(99, 45, 150);
 }
 .input:focus {
-    outline: 1px solid blueviolet;
+    outline: 1px solid rgba(147, 66, 224, 0.5);
 }
 .button {
     border-radius: 10px;
     height: 20px;
     border: none;
-    background-color:rgb(107, 107, 243);
+    background-color:rgba(147, 66, 224, 0.5);
     font-size: 12px;
     color: white;
+    width: 100px;
+    border:  1px solid rgba(147, 66, 224, 0.4);
+    box-shadow: 0 6px 10px 0 rgb(99, 45, 150);
 }
 
-.button:hover {
-    color: rgb(31, 31, 206);
-    background-color: rgb(89, 89, 243);
+.button:hover, .button:focus {
+    color: rgb(147, 66, 224);
+    background-color:rgba(147, 66, 224, 0.5);
+    border:  1px solid rgba(147, 66, 224, 0.3);
+    box-shadow: 0 8px 10px 0 rgba(99, 45, 150, 0.8);
+    
+
 }

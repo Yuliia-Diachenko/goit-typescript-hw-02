@@ -1,0 +1,7 @@
+.image {
+    width: 200px;
+    background-position: center center;
+    border-radius: 4px;
+    border:  1px solid rgba(147, 66, 224, 0.4);
+    box-shadow: 0 6px 10px 0 rgb(99, 45, 150);
+}

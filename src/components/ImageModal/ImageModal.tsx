@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import ReactModal from "react-modal";
 import { ImageModalProps } from "./ImageModal.type";
+import css from './ImageModal.module.css';
 
 const ImageModal: React.FC<ImageModalProps> = ({
   data: {
@@ -27,13 +28,15 @@ const ImageModal: React.FC<ImageModalProps> = ({
           height: "80%",
           margin: "auto",
           padding: "0",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         },
       }}
     >
       <img
         src={regular}
         alt={alt_description}
-        style={{ width: "100%", height: "100%", objectFit: "inherit" }}
+        width="100%" height="100%" className={css.image}
       />
     </ReactModal>
   );

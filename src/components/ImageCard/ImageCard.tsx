@@ -9,7 +9,7 @@ const ImageCard: React.FC<ImageCardProps> = ({
 }) => {
   return (
     <div className={css.container}>
-      <img src={small} alt={alt_description} width="200" height="170" />
+      <img src={small} alt={alt_description} width="200" height="170" className={css.image}/>
     </div>
   );
 };
